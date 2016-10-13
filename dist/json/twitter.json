@@ -1,0 +1,35 @@
+{"personDetails":[{
+					"id": " @rai_abha",
+					"name": "Abha Rai",
+					"postTime": "2m",
+					"imgLink":"images/nishi.jpg",
+					"tweet":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+					"tweetType":"text"
+				},
+				{	
+					"id": " @agrwl_Vineeta",
+					"name":"Vineeta Agarwal",
+					"postTime":"1h",
+					"imgLink":"images/vini.jpg",
+					"tweet":"images/tweetImg.jpg",
+					"tweetType":"image"
+				},
+				{	
+					"id": " @rawat_nishi",
+					"name": "Nishi Rawat",
+					"postTime":"5m",
+					"imgLink":"images/nishi.jpg",
+					"tweet":"http://www.w3schools.com/html/mov_bbb.mp4",
+					"tweetType":"video"
+				},
+				{
+					"id": " @aminMhd",
+					"name":"Mohammed Amin",
+					"postTime":"2h",
+					"imgLink":"images/vini.jpg",
+					"tweet":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+					"tweetType":"text"
+				}
+				
+	]
+}

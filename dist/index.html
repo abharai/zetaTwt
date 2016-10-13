@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+	<head>
+		<title>Zeta Twitter Demo</title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Anton|Indie+Flower|Pacifico|Changa|Shadows+Into+Light" rel="stylesheet">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/style.css"></link>
+		
+	</head>
+	<body  style="background-color: #f5f8fa;" ng-controller="myController">
+			
+		
+			<header style="background-color: #fff;" class="clearfix white border">
+				<div class="left">
+					<a href="#/" title="Tweet" class="btn py2" style="border-right: 1px solid #e1e8ed;"><i style="background-color:#1da1f2;color:fff" class="fa fa-leaf fa-2 font-awesome-icon-border" aria-hidden="true"></i></a>
+					<a href="#/" title="Notifications"class="btn py2" style="color:#000"><i  class="fa fa-bell-o fa-1 font-awesome-icon-border" aria-hidden="true"></i></a>
+					<a href="#/" title="Messages" class="btn py2" style="color:#000"><i class="fa fa-envelope-o fa-1 font-awesome-icon-border" aria-hidden="true"></i></a>
+					<a href="#/" title="Home" class="btn py2" style="color:#000"><i class="fa fa-hashtag fa-1 font-awesome-icon-border" aria-hidden="true"></i></a>
+				</div>
+				<div class="right">
+					<a href="#/" class="btn py2" style="color:#000"><i class="fa fa-user fa-2 font-awesome-icon-border" aria-hidden="true"></i></a>
+				</div>
+				<div class="right py2">
+					<input id="search" type="text" class="searchfield" placeholder="search">
+				</div>
+				
+				<span class="overflow-hidden sm-show center">
+					<a href="#/" class="btn py2" style="color:#1da1f2"><i class="fa fa-twitter fa-2" aria-hidden="true"></i></a>
+				</span>
+			</header>
+		
+		
+			<nav class="border">
+				<ul class="sm-flex center nowrap">
+					<li style="border-bottom:5px solid #1da1f2"class="flex-auto p2 centerAlign"><a href="#/"><span class="navHeader">TWEETS</span><br><span class="boldColor">200</span></a></li>
+					<li class="flex-auto p2 centerAlign"><a href="#/"><span class="navHeader">PHOTOS/VIDEOS</span><br><span class="boldColor">100</span></a></li>
+					<li class="flex-auto p2 centerAlign"><a href="#/"><span class="navHeader">FOLLOWING</span><br><span class="boldColor">200</span></a></li>
+					<li class="flex-auto p2 centerAlign"><a href="#/"><span class="navHeader">FOLLOWERS</span><br><span class="boldColor">1M</span></a></li>
+				<ul>
+			</nav>
+		
+			<section class="border" style="height:auto">
+				<ul class="center">
+					<li ng-repeat="key in profile.personDetails" class="p2 border-bottom">
+						<article class="flex-auto sm-flex">
+							<div class="flex-auto">
+								<div>
+									<span style="text-align:left;" class="boldColor left">{{key.name}}</span>
+									<span class="navHeader left">{{key.id}}</span>
+									<span class="navHeader right">{{key.postTime}}</span></div>
+									<p ng-if="key.tweetType == 'text'" style="text-align:left;" class="mt3 mb2">{{key.tweet}}</p>
+									<div ng-if="key.tweetType == 'image'" style="text-align:left;" class="mt3 mb2">
+										<img ng-src="{{key.tweet}}">
+									</div>
+									<div ng-if="key.tweetType == 'video'" style="text-align:left;" class="mt3 mb2">
+										<video  ng-src="{{trustSrc(key.tweet)}}" controls autoplay>
+										</video>
+									</div>
+								<div>
+									<span class="tweet-icon left px2 py1"><i class="fa fa-reply fa-1" aria-hidden="true"></i></span>
+									<span class="tweet-icon left px2 py1"><i class="fa fa-star fa-1" aria-hidden="true"></i></span>
+									<span class="tweet-icon left px2 py1"><i class="fa fa-retweet fa-1" aria-hidden="true"></i></span>
+									<span class="tweet-icon left px2 py1"><i class="fa fa-ellipsis-h fa-1" aria-hidden="true"></i></span>
+									<span class="tweet-icon right px2 py1"><i class="fa fa-expand fa-1" aria-hidden="true"></i></span>
+								</div>
+							</div>
+							<div class="flex-first mr2">
+								<img style="height:50px;width:50px;border-radius: 25px;" ng-src="{{key.imgLink}}">
+							</div>
+							
+						</article>
+					
+					</li>
+				</ul>
+			</section>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
