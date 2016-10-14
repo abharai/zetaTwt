@@ -50,7 +50,9 @@
 									<span style="text-align:left;" class="boldColor left">{{key.name}}</span>
 									<span class="navHeader left">{{key.id}}</span>
 									<span class="navHeader right">{{key.postTime}}</span></div>
-									<p ng-if="key.tweetType == 'text'" style="text-align:left;" class="mt3 mb2">{{key.tweet}}</p>
+									<div ng-if="key.tweetType == 'text'" style="text-align:left;" class="mt3 mb2">
+										<p>{{key.tweet}}</p>
+									</div>
 									<div ng-if="key.tweetType == 'image'" style="text-align:left;" class="mt3 mb2">
 										<img ng-src="{{key.tweet}}">
 									</div>
@@ -66,8 +68,8 @@
 									<span class="tweet-icon right px2 py1"><i class="fa fa-expand fa-1" aria-hidden="true"></i></span>
 								</div>
 							</div>
-							<div class="flex-first mr2">
-								<img style="height:50px;width:50px;border-radius: 25px;" ng-src="{{key.imgLink}}">
+							<div class="flex-first mr2" style="width:{{key.imgWidth}}">
+								<img style="border-radius: 25px;" ng-src="{{key.imgLink}}">
 							</div>
 							
 						</article>

@@ -2,7 +2,8 @@
 					"id": " @rai_abha",
 					"name": "Abha Rai",
 					"postTime": "2m",
-					"imgLink":"images/nishi.jpg",
+					"imgLink":"images/abha.jpg",
+					"imgWidth":"8em",
 					"tweet":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 					"tweetType":"text"
 				},
@@ -11,6 +12,7 @@
 					"name":"Vineeta Agarwal",
 					"postTime":"1h",
 					"imgLink":"images/vini.jpg",
+					"imgWidth":"3em",
 					"tweet":"images/tweetImg.jpg",
 					"tweetType":"image"
 				},
@@ -19,6 +21,7 @@
 					"name": "Nishi Rawat",
 					"postTime":"5m",
 					"imgLink":"images/nishi.jpg",
+					"imgWidth":"3em",
 					"tweet":"http://www.w3schools.com/html/mov_bbb.mp4",
 					"tweetType":"video"
 				},
@@ -26,7 +29,8 @@
 					"id": " @aminMhd",
 					"name":"Mohammed Amin",
 					"postTime":"2h",
-					"imgLink":"images/vini.jpg",
+					"imgLink":"images/amin.jpg",
+					"imgWidth":"15em",
 					"tweet":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
 					"tweetType":"text"
 				}
