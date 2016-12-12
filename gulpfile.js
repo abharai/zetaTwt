@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
+var sass = require('gulp-sass');
 
 gulp.task('connect', function () {
 	connect.server({
@@ -19,4 +20,10 @@ gulp.task('browserify', function() {
         .pipe(source('main.js'))
         // saves it the public/js/ directory
         .pipe(gulp.dest('./dist/js/'));
-})
+});
+
+gulp.task('sass', function () {
+  return gulp.src('./app/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist/css/'));
+});
